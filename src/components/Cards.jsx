@@ -74,7 +74,7 @@ function Cards() {
                 {
                     cards.map((card) => (
                         <div className='col-md-4' key={card.id}>
-                            <Card title={card.title} imagSourse={card.image} url={card.url}/>
+                            <Card title={card.title} imagSourse={card.image} text={card.text} url={card.url}/>
                         </div>
                     ))
                 }
