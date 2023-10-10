@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 
 
@@ -15,6 +16,12 @@ function Card({title, imagSourse, url}) {
             </div>
         </div>
     )
+}
+
+Card.PropTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string,
+    imagSourse: PropTypes.string
 }
 
 export default Card
